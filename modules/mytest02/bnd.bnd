@@ -1,0 +1,11 @@
+Bundle-Name: mytest02
+Bundle-SymbolicName: mytest02
+Bundle-Version: 1.0.0
+Provide-Capability:\
+	soy;\
+		type="mytest02";\
+		version:Version="1.0.0"
+Require-Capability:\
+	soy;\
+		filter:="(type=metal)"
+-includeresource: package.json
