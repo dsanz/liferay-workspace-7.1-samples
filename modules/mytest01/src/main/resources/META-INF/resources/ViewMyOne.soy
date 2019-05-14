@@ -10,9 +10,15 @@
 		nameCurrentValue: string
 	]>}
 	{@param navigationURL: string}
+	{@param _handleClick: any}
 
 	<div id="{$id}">
 		{call HeaderMyOne.render data="all"}{/call}
+
+		<button data-onclick="{$_handleClick}" type="button" >data-onclick → fn ref</button><br/>
+		<button data-onclick="_handleClick" type="button" >data-onclick → fn name</button><br/>
+		<button onClick="{$_handleClick}" type="button" >onclick → fn ref</button><br/>
+ 		<button onClick="_handleClick" type="button" >onclick → fn name</button><br/>
 
 		<p>{msg desc=""}here-you-will-find-how-easy-it-is-to-do-things-like{/msg}</p>
 

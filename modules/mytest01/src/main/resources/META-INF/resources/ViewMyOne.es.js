@@ -7,7 +7,12 @@ import templates from './ViewMyOne.soy';
 /**
  * View Component
  */
-class ViewMyOne extends Component {}
+class ViewMyOne extends Component {
+	_handleClick(event) {
+		event.preventDefault();
+		alert(event.target.innerText + " [MyTest01] pushed!");
+	}
+}
 
 // Register component
 Soy.register(ViewMyOne, templates);
