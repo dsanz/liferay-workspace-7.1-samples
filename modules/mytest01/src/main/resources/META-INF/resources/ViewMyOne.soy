@@ -1,4 +1,4 @@
-{namespace View}
+{namespace ViewMyOne}
 
 /**
  * Prints the portlet main view.
@@ -12,7 +12,7 @@
 	{@param navigationURL: string}
 
 	<div id="{$id}">
-		{call Header.render data="all"}{/call}
+		{call HeaderMyOne.render data="all"}{/call}
 
 		<p>{msg desc=""}here-you-will-find-how-easy-it-is-to-do-things-like{/msg}</p>
 
@@ -30,6 +30,6 @@
 
 		<a href="{$navigationURL}">{msg desc=""}click-here-to-navigate-to-another-view{/msg}</a>
 
-		{call Footer.render data="all"}{/call}
+		{call FooterMyOne.render data="all"}{/call}
 	</div>
 {/template}

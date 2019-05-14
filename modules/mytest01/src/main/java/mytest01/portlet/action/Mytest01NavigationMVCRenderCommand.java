@@ -19,7 +19,7 @@ import org.osgi.service.component.annotations.Component;
 	immediate = true,
 	property = {
 		"javax.portlet.name=" + Mytest01PortletKeys.Mytest01,
-		"mvc.command.name=Navigation"
+		"mvc.command.name=NavigationMyOne"
 	},
 	service = MVCRenderCommand.class
 )
@@ -35,13 +35,13 @@ public class Mytest01NavigationMVCRenderCommand
 
 		PortletURL navigationURL = renderResponse.createRenderURL();
 
-		navigationURL.setParameter("mvcRenderCommandName", "View");
+		navigationURL.setParameter("mvcRenderCommandName", "ViewMyOne");
 
 		template.put("navigationURL", navigationURL.toString());
 
 		template.put("releaseInfo", ReleaseInfo.getReleaseInfo());
 
-		return "Navigation";
+		return "NavigationMyOne";
 	}
 
 }
