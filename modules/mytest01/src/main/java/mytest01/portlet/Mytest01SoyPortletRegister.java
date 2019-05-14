@@ -25,7 +25,8 @@ import org.osgi.service.component.annotations.Component;
 		"javax.portlet.name=" + Mytest01PortletKeys.Mytest01,
 		"javax.portlet.resource-bundle=content.Language",
 		"javax.portlet.security-role-ref=power-user,user"
-	}
+	},
+	service=SoyPortletRegister.class
 )
 public class Mytest01SoyPortletRegister implements SoyPortletRegister {
 }
