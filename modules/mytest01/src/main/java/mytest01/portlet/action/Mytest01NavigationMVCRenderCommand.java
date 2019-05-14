@@ -9,6 +9,7 @@ import javax.portlet.PortletURL;
 import javax.portlet.RenderRequest;
 import javax.portlet.RenderResponse;
 
+import mytest01.constants.Mytest01PortletKeys;
 import org.osgi.service.component.annotations.Component;
 
 /**
@@ -17,7 +18,8 @@ import org.osgi.service.component.annotations.Component;
 @Component(
 	immediate = true,
 	property = {
-		"javax.portlet.name=Mytest01", "mvc.command.name=Navigation"
+		"javax.portlet.name=" + Mytest01PortletKeys.Mytest01,
+		"mvc.command.name=Navigation"
 	},
 	service = MVCRenderCommand.class
 )
